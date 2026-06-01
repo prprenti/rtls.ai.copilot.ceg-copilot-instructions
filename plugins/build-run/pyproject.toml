@@ -1,0 +1,9 @@
+[project]
+name = "ddg-build-run"
+version = "0.1.0"
+description = "Build-run plugin local script runtime and skill execution context"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv]
+package = false

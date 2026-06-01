@@ -1,0 +1,29 @@
+{
+  "name": "ceg-runfv",
+  "description": "RunFV formal verification \u2014 JasperGold batch Tcl execution, proof setup, SVA property generation, CompMon/ABVIP integration, VCD trace analysis, and proof debugging",
+  "version": "0.1.0",
+  "keywords": [
+    "runfv",
+    "formal-verification",
+    "jasper",
+    "fpv",
+    "tcl",
+    "jaspergold",
+    "sva",
+    "compmon",
+    "abvip",
+    "vcd",
+    "debug",
+    "ceg"
+  ],
+  "agents": [
+    "runfv-verify.agent.md"
+  ],
+  "skills": [
+    "skills/jg-cmd",
+    "skills/proof-debug",
+    "skills/runfv-setup",
+    "skills/sva-properties"
+  ],
+  "mcpServers": ".mcp.json"
+}

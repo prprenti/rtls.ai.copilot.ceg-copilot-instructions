@@ -1,0 +1,65 @@
+[project]
+name = "ceg-mcp-tests"
+version = "0.1.0"
+description = "Test suite for CEG Copilot plugins and instructions"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.0",
+    "pyyaml>=6.0",
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "vmanager-vamp>=1.4",
+]
+
+[tool.uv.sources]
+vmanager-vamp = { index = "intel-hive" }
+
+[[tool.uv.index]]
+name = "intel-hive"
+url = "https://devpi.intel.com/general/hive/+simple/"
+explicit = true
+
+# Root-level pytest configuration — runs tests/ against plugins/ and skills/
+[tool.pytest.ini_options]
+testpaths = [
+    "tests/prompt_quality",
+    "plugins/access/skills/cdislookup/tests",
+    "plugins/build-run/mcp-server/tests",
+    "plugins/hsd/mcp-server/tests",
+    "plugins/turnin/mcp-server/tests",
+    "plugins/validation/mcp-server/tests",
+    "plugins/fe-setup/mcp-server/tests",
+    "plugins/runfv/mcp-server/tests",
+]
+pythonpath = [
+    "plugins/build-run/mcp-server",
+    "plugins/hsd/mcp-server",
+    "plugins/turnin/mcp-server",
+    "plugins/validation/mcp-server",
+    "plugins/fe-setup/mcp-server",
+    "plugins/runfv/mcp-server",
+    "tests/prompt_quality",
+]
+asyncio_mode = "auto"
+markers = [
+    "prompt_quality: heuristic checks for prompt engineering quality",
+    "slow: tests that take more than a few seconds",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+extraPaths = [
+    "plugins/build-run/mcp-server",
+    "plugins/hsd/mcp-server",
+    "plugins/turnin/mcp-server",
+    "plugins/validation/mcp-server",
+    "tests",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true

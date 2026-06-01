@@ -1,0 +1,21 @@
+{
+  "name": "ceg-ip-management",
+  "description": "IP management queries and CTH configuration lookups",
+  "version": "0.1.0",
+  "keywords": [
+    "ip-management",
+    "cth",
+    "ip-release",
+    "ceg"
+  ],
+  "agents": [
+    "ip-management.agent.md"
+  ],
+  "skills": [
+    "skills/crt",
+    "skills/cth-query",
+    "skills/fbi",
+    "skills/ip-release",
+    "skills/ipx-cli"
+  ]
+}

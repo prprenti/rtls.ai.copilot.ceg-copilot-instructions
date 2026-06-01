@@ -1,0 +1,9 @@
+[project]
+name = "ddg-runfv"
+version = "0.1.0"
+description = "RunFV plugin local script runtime and skill execution context"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv]
+package = false

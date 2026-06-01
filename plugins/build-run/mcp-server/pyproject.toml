@@ -1,0 +1,17 @@
+[project]
+name = "ddg-mcp-server"
+version = "0.1.0"
+description = "MCP server for DDG repo skills, instructions, commands, and context"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+
+[project.scripts]
+build-run-mcp = "server_build_run:main"

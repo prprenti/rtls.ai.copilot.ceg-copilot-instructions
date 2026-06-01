@@ -1,0 +1,16 @@
+{
+  "name": "ceg-block-diagram",
+  "description": "Block diagram creation for RTL modules using Graphviz DOT",
+  "version": "0.1.0",
+  "keywords": [
+    "graphviz",
+    "dot",
+    "block-diagram",
+    "rtl",
+    "visualization",
+    "ceg"
+  ],
+  "skills": [
+    "skills/graphviz-dot"
+  ]
+}

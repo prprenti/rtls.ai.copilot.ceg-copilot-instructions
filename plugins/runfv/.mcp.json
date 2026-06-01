@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "runfv-mcp": {
+      "type": "stdio",
+      "command": "/p/cth/rtl/cad/x86-64_linux44/astral/uv/0.9.17/uv",
+      "args": [
+        "run",
+        "--project",
+        "mcp-server",
+        "python",
+        "mcp-server/server_runfv.py"
+      ],
+      "env": {
+        "WORKAREA": "${workspaceFolder}",
+        "UV_FROZEN": "1",
+        "UV_PROJECT_ENVIRONMENT": "${workspaceFolder}/.vscode/.runfv-mcp-venv",
+        "UV_CONCURRENT_INSTALLS": "4",
+        "UV_CONCURRENT_BUILDS": "4",
+        "UV_CONCURRENT_DOWNLOADS": "8",
+        "HTTP_PROXY": "http://proxy-dmz.intel.com:911",
+        "HTTPS_PROXY": "http://proxy-dmz.intel.com:912",
+        "http_proxy": "http://proxy-dmz.intel.com:911",
+        "https_proxy": "http://proxy-dmz.intel.com:912",
+        "no_proxy": "intel.com,.intel.com,localhost,127.0.0.0/8,10.0.0.0/8,192.168.0.0/16,134.134.0.0/16,.azure-api.net,azurewebsites.net"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ceg-validation",
+  "description": "vManager test management, failure analysis, validation planning, register topology, and Griffin post-simulation validation",
+  "version": "0.1.0",
+  "keywords": [
+    "vmanager",
+    "validation",
+    "register-topology",
+    "vamp",
+    "netbatch",
+    "griffin",
+    "post-simulation",
+    "protocol-checker",
+    "ceg"
+  ],
+  "agents": [
+    "validation.agent.md"
+  ],
+  "skills": [
+    "skills/code-coverage-exclusion",
+    "skills/griffin-agent-setup",
+    "skills/griffin-execution",
+    "skills/netbatch",
+    "skills/register-topology",
+    "skills/simregress",
+    "skills/vamp-analysis",
+    "skills/vamp-composer",
+    "skills/vamp-plan"
+  ],
+  "mcpServers": ".mcp.json"
+}

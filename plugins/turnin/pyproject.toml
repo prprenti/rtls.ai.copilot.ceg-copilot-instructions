@@ -1,0 +1,9 @@
+[project]
+name = "ddg-turnin"
+version = "0.1.0"
+description = "Turnin plugin local skill execution context"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv]
+package = false

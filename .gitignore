@@ -1,0 +1,15 @@
+.idea
+__pycache__
+.pytest_cache
+*.pyc
+*.pyo
+*.pyd
+*.log
+.venv
+plugins/build-run/mcp-server/build
+*.egg-info
+plugins/build-run/mcp-server/dist
+.env
+
+.github/prompts/**
+.github/instructions/**

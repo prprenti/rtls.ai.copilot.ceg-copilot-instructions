@@ -1,0 +1,24 @@
+{
+  "name": "ceg-build-run",
+  "description": "Foundational build tooling, template engines, and language support for DDG design repos",
+  "version": "0.1.0",
+  "keywords": [
+    "build",
+    "grdlbuild",
+    "make",
+    "kotlin",
+    "mako",
+    "templates",
+    "codegen",
+    "ceg"
+  ],
+  "agents": [
+    "build-run.agent.md",
+    "kotlin.agent.md",
+    "mako.agent.md"
+  ],
+  "skills": [
+    "skills/grdlbuild"
+  ],
+  "mcpServers": ".mcp.json"
+}

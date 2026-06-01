@@ -1,0 +1,20 @@
+{
+  "name": "ceg-access",
+  "description": "AGS provisioning management and employee directory lookups",
+  "version": "0.1.0",
+  "keywords": [
+    "ags",
+    "cdislookup",
+    "access",
+    "provisioning",
+    "employee-lookup",
+    "ceg"
+  ],
+  "agents": [
+    "access.agent.md"
+  ],
+  "skills": [
+    "skills/ags",
+    "skills/employee-lookup"
+  ]
+}

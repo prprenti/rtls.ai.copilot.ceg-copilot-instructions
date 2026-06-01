@@ -1,0 +1,7 @@
+defaults:
+  repo_branch: "master"
+groups:
+  - cheetah_setup_command: "/p/cth/bin/cth_psetup -p cadg_ss -cfg cadg_ss_fe.cth"
+    repos:
+      - path: "/nfs/site/disks/cadgss_git_0001"
+        keywords: ["cadg_ss_access_control", "cadg_ss_ddr", "cadg_ss_eth", "cadg_ss_pcie", "cadg_ss_project_tools,","cadg_ss_ucie", "cadg_ss_usb",]

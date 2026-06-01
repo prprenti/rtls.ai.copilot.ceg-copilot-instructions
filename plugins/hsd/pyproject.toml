@@ -1,0 +1,9 @@
+[project]
+name = "ddg-hsd"
+version = "0.1.0"
+description = "HSD plugin local script runtime context"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv]
+package = false

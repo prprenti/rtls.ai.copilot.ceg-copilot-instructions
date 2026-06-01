@@ -1,0 +1,35 @@
+{
+  "name": "iu-debug",
+  "description": "Unified IU validation debug skills - shared methodology, D2D (CFI protocol), HBO (IDI tracker), and MC (test environment, Griffin/UTDB, Denali, checkers)",
+  "version": "0.1.0",
+  "keywords": [
+    "debug",
+    "validation",
+    "d2d",
+    "cfi",
+    "hbo",
+    "idi",
+    "mc",
+    "memory-controller",
+    "griffin",
+    "utdb",
+    "denali",
+    "checker",
+    "vip",
+    "protocol",
+    "ceg"
+  ],
+  "agents": [
+    "iu-debug.agent.md"
+  ],
+  "skills": [
+    "skills/d2d-cfi-debug",
+    "skills/d2d-vip-debug",
+    "skills/debug-methodology",
+    "skills/hbo-idi-debug",
+    "skills/mc-checker-debug",
+    "skills/mc-denali-debug",
+    "skills/mc-pp-debug",
+    "skills/mc-te-debug"
+  ]
+}

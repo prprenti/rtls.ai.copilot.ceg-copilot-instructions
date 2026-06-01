@@ -1,0 +1,11 @@
+[project]
+name = "hsd-mcp-server"
+version = "0.1.0"
+description = "MCP server for HSD (HSdes) bug tracking — queries, articles, updates"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0",
+]
+
+[project.scripts]
+hsd-mcp = "server_hsd:main"

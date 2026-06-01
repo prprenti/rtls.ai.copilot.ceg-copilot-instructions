@@ -1,0 +1,9 @@
+[project]
+name = "ddg-access"
+version = "0.1.0"
+description = "Access plugin local script runtime for AGS and employee lookup skills"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv]
+package = false

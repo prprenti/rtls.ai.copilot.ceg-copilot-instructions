@@ -1,0 +1,19 @@
+{
+  "name": "ceg-hsd",
+  "description": "HSD (HSdes) bug tracking \u2014 queries, articles, updates, and cloning",
+  "version": "0.1.0",
+  "keywords": [
+    "hsd",
+    "hsdes",
+    "bug-tracking",
+    "articles",
+    "ceg"
+  ],
+  "agents": [
+    "hsd.agent.md"
+  ],
+  "skills": [
+    "skills/hsd-query"
+  ],
+  "mcpServers": ".mcp.json"
+}

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "validation-mcp-server"
+version = "0.1.0"
+description = "MCP server for vManager test management, failure analysis, validation planning, and register topology"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0",
+    "vmanager-vamp>=1.5.0",
+]
+
+[project.scripts]
+validation-mcp = "validation_mcp.server:main"
+validation-mcp-benchmark = "validation_mcp.benchmarks:main"
+
+[tool.uv]
+system-certs = true
+
+[tool.uv.sources]
+vmanager-vamp = { index = "intel-devpi-hive" }
+
+[[tool.uv.index]]
+name = "intel-devpi-root"
+url = "https://devpi.intel.com/root/pypi/+simple/"
+explicit = true
+
+[[tool.uv.index]]
+name = "intel-devpi-hive"
+url = "https://devpi.intel.com/general/hive/+simple/"
+explicit = true
+
+[tool.setuptools]
+packages = [
+    "backends",
+    "backends.vmanager",
+    "validation_mcp",
+    "validation_mcp.runtime",
+    "vmanager",
+]
+py-modules = ["register_topology", "server_validation", "standard_runs_query"]

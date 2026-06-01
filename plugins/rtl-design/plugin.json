@@ -1,0 +1,28 @@
+{
+  "name": "ceg-rtl-design",
+  "description": "RTL design and static analysis flows for DDG design repos",
+  "version": "0.1.0",
+  "keywords": [
+    "rtl",
+    "systemverilog",
+    "cdc",
+    "lint",
+    "lp",
+    "sgdft",
+    "effm",
+    "assembly",
+    "eda",
+    "design",
+    "ceg"
+  ],
+  "agents": [
+    "assembly.agent.md",
+    "cdc.agent.md",
+    "lint.agent.md",
+    "lp.agent.md",
+    "rtl-design.agent.md",
+    "rtl.agent.md",
+    "sgdft.agent.md",
+    "vc-effm.agent.md"
+  ]
+}

@@ -1,0 +1,11 @@
+[project]
+name = "runfv-mcp-server"
+version = "0.1.0"
+description = "MCP server for RunFV formal verification — JasperGold batch Tcl execution"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0",
+]
+
+[project.scripts]
+runfv-mcp = "server_runfv:main"

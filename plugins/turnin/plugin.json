@@ -1,0 +1,18 @@
+{
+  "name": "ceg-turnin",
+  "description": "Turnin submission execution and gatekeeper log access",
+  "version": "0.1.0",
+  "keywords": [
+    "turnin",
+    "gatekeeper",
+    "code-submission",
+    "ceg"
+  ],
+  "agents": [
+    "turnin.agent.md"
+  ],
+  "skills": [
+    "skills/turnin"
+  ],
+  "mcpServers": ".mcp.json"
+}

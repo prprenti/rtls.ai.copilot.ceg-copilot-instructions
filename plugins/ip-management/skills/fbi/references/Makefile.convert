@@ -1,0 +1,9 @@
+all:
+	git checkout --ours filelists/hubs.hip.list filelists/hubs.sip.list filelists/noreuse.sip.list filelists/val/noreuse.vip.list filelists/val/vip.list
+	python3 $(WORKAREA)/integration/create_list_file/scripts/list_to_fqn.py -f filelists/hubs.hip.list 
+	python3 $(WORKAREA)/integration/create_list_file/scripts/list_to_fqn.py -f filelists/hubs.sip.list
+	python3 $(WORKAREA)/integration/create_list_file/scripts/list_to_fqn.py -f filelists/noreuse.sip.list
+	#python3 $(WORKAREA)/integration/create_list_file/scripts/list_to_fqn.py -f filelists/val/noreuse.vip.list
+	python3 $(WORKAREA)/integration/create_list_file/scripts/list_to_fqn.py -f filelists/val/vip.list
+	/bin/rm filelists/hubs.hip.list filelists/hubs.sip.list filelists/noreuse.sip.list filelists/val/noreuse.vip.list filelists/val/vip.list
+	git add filelists/hubs.hip.ipx filelists/hubs.sip.ipx filelists/noreuse.sip.ipx filelists/val/noreuse.vip.ipx filelists/val/vip.ipx

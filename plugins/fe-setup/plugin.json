@@ -1,0 +1,19 @@
+{
+  "name": "ceg-fe-setup",
+  "description": "Frontend environment setup, repo cloning, and terminal session management",
+  "version": "0.1.0",
+  "keywords": [
+    "setup",
+    "clone",
+    "cth_psetup",
+    "environment",
+    "terminal",
+    "workarea",
+    "ceg"
+  ],
+  "agents": [
+    "env-detect.agent.md",
+    "fe-setup.agent.md"
+  ],
+  "mcpServers": ".mcp.json"
+}
