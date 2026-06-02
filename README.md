@@ -15,13 +15,13 @@ engineering workflows.
 Add this repo as a marketplace:
 
 ```bash
-copilot plugin marketplace add intel-innersource/rtls.ai.copilot.ceg-copilot-instructions
+copilot plugin marketplace add prprenti/rtls.ai.copilot.ceg-copilot-instructions
 ```
 
 Install a specific plugin directly from the repository:
 
 ```bash
-copilot plugin install intel-innersource/rtls.ai.copilot.ceg-copilot-instructions:plugins/build-run
+copilot plugin install prprenti/rtls.ai.copilot.ceg-copilot-instructions:plugins/build-run
 ```
 
 For local iterative testing, install the plugin from a filesystem path and
